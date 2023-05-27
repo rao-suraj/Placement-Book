@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "695773918555",
+    "project_id": "placementbook-ba95f",
+    "storage_bucket": "placementbook-ba95f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695773918555:android:b9e591f00580ad528b167e",
+        "android_client_info": {
+          "package_name": "com.example.placementbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695773918555-5pqks1ulrtj2kgp1ren1lvinsv0qgolu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdOS81BTzYvDaaqYvNvjZWhitOxNKUeyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "695773918555-5pqks1ulrtj2kgp1ren1lvinsv0qgolu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
