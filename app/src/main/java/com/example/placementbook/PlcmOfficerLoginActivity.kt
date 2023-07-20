@@ -3,8 +3,8 @@ package com.example.placementbook
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.ContactsContract.CommonDataKinds.Email
 import android.widget.Toast
+import com.example.placementbook.dataclass.PlacementOfficerInfo
 import com.example.placementbook.databinding.ActivityPlcmOfficerLoginBinding
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObjects
@@ -19,14 +19,12 @@ class PlcmOfficerLoginActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityPlcmOfficerLoginBinding
 
-    val db=Firebase.firestore
+    private val db=Firebase.firestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityPlcmOfficerLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
 
         binding.loginButton.setOnClickListener {
             name=binding.nameText.text.toString()
@@ -36,11 +34,11 @@ class PlcmOfficerLoginActivity : AppCompatActivity() {
                 .addOnSuccessListener {
                     plcInfo = it.toObjects<PlacementOfficerInfo>()
                     if (plcInfo.isEmpty()) {
-                        Toast.makeText(this, "error", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "Invalid User Name", Toast.LENGTH_LONG).show()
                     } else {
                         if (plcInfo[0].name == name) {
                             if (plcInfo[0].password == password) {
-                                val intent= Intent(this,OfficerHomeActivity::class.java)
+                                val intent= Intent(this,PlcOfficerHomeActivity::class.java)
                                 startActivity(intent)
                                 finish()
                             } else {

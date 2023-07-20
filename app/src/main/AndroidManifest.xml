@@ -12,13 +12,23 @@
         android:theme="@style/Theme.PlacementBook.MySplashScreen"
         tools:targetApi="31">
         <activity
-            android:name=".OfficerHomeActivity"
+            android:name=".ActivityViewCompany"
             android:exported="false"
-            android:theme="@style/Theme.PlacementBook"/>
+            android:theme="@style/Theme.PlacementBook">
+
+        </activity>
+        <activity
+            android:name=".AddCompanyActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PlacementBook" />
+        <activity
+            android:name=".PlcOfficerHomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PlacementBook" />
         <activity
             android:name=".UserHomeActivity"
             android:exported="false"
-            android:theme="@style/Theme.PlacementBook"/>
+            android:theme="@style/Theme.PlacementBook" />
         <activity
             android:name=".UserRegistrationActivity"
             android:exported="false"
@@ -26,21 +36,22 @@
         <activity
             android:name=".PlcmOfficerLoginActivity"
             android:exported="true"
-            android:theme="@style/Theme.PlacementBook">
-
-        </activity>
+            android:theme="@style/Theme.PlacementBook" />
         <activity
             android:name=".UserLoginActivity"
             android:exported="false"
             android:theme="@style/Theme.PlacementBook" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:theme="@style/Theme.PlacementBook">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 

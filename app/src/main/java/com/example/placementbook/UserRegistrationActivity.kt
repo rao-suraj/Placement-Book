@@ -1,11 +1,10 @@
 package com.example.placementbook
 
-import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.placementbook.databinding.ActivityMainBinding
+import com.example.placementbook.dataclass.UserInfo
 import com.example.placementbook.databinding.ActivityUserRegistrationBinding
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -19,7 +18,7 @@ class UserRegistrationActivity : AppCompatActivity() {
     lateinit var password2:String
     lateinit var linkedInUrl:String
     lateinit var uid:String
-    val db=Firebase.firestore
+    private val db=Firebase.firestore
 
 
     lateinit var binding: ActivityUserRegistrationBinding

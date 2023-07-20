@@ -1,4 +1,4 @@
-package com.example.placementbook
+package com.example.placementbook.dataclass
 
 data class UserInfo(val emailId:String="",
                     val name:String="",
