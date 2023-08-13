@@ -17,9 +17,9 @@ class UserRegistrationActivity : AppCompatActivity() {
     lateinit var password1:String
     lateinit var password2:String
     lateinit var linkedInUrl:String
+
     lateinit var uid:String
     private val db=Firebase.firestore
-
 
     lateinit var binding: ActivityUserRegistrationBinding
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,7 +1,10 @@
 package com.example.placementbook
 
+import android.content.Context
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.placementbook.dataclass.CompanyDesc
 import com.example.placementbook.databinding.ActivityAddCompanyBinding
 import com.google.firebase.firestore.ktx.firestore
@@ -14,6 +17,9 @@ class AddCompanyActivity : AppCompatActivity() {
     lateinit var pac:String
     lateinit var shortDesc:String
     lateinit var field:String
+    lateinit var category: String
+    lateinit var jobDescription:String
+    lateinit var recruitment :String
 
     lateinit var binding:ActivityAddCompanyBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,14 +27,21 @@ class AddCompanyActivity : AppCompatActivity() {
         binding=ActivityAddCompanyBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
+
         binding.buttonSubmit.setOnClickListener {
 
             cmpName=binding.textCompName.text.toString()
             pac=binding.textPackage.text.toString()
             shortDesc=binding.textCompDesc.text.toString()
             field=binding.textCompField.text.toString()
+            category=binding.editTextCat.text.toString()
+            jobDescription=binding.editTextJobDesc.text.toString()
+            recruitment=binding.editTextRecProcess.text.toString()
 
-            val comDes= CompanyDesc(cmpName,pac,shortDesc,field)
+
+            val comDes= CompanyDesc(cmpName,pac,category,shortDesc,field,jobDescription,recruitment)
 
             val companyRef = db.collection("companies").document(cmpName)
             companyRef.set(comDes)
@@ -44,7 +57,6 @@ class AddCompanyActivity : AppCompatActivity() {
             )
             // Set the data for the review document
             reviewDocRef.set(reviewData)
-
         }
     }
 }

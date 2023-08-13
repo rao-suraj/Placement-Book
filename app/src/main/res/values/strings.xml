@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Placement Book</string>
+    <string name="shared_preference_key">"com.example.placementbook_USERINFO_KEY"</string>
+
 </resources>
