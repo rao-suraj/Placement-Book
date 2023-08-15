@@ -140,6 +140,7 @@
                     android:scrollbars="vertical"
                     android:scrollbarStyle="insideInset"
                     android:maxLines="100"
+                    android:background="@drawable/bg_edittext"
                     />
 
             </ScrollView>
@@ -172,6 +173,7 @@
                     android:scrollbars="vertical"
                     android:scrollbarStyle="insideInset"
                     android:maxLines="100"
+                    android:background="@drawable/bg_edittext"
                     />
 
             </ScrollView>
@@ -205,7 +207,8 @@
                     android:gravity="start|top"
                     android:scrollbars="vertical"
                     android:scrollbarStyle="insideInset"
-                    android:maxLines="100" />
+                    android:maxLines="100"
+                    android:background="@drawable/bg_edittext"/>
 
             </ScrollView>
 
@@ -236,7 +239,8 @@
                     android:gravity="start|top"
                     android:scrollbars="vertical"
                     android:scrollbarStyle="insideInset"
-                    android:maxLines="100" />
+                    android:maxLines="100"
+                    android:background="@drawable/bg_edittext"/>
 
             </ScrollView>
 

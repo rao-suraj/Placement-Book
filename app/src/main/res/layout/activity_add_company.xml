@@ -1,10 +1,199 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".AddCompanyActivity">-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/textCompName"-->
+<!--        android:layout_width="231dp"-->
+<!--        android:layout_height="62dp"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="text"-->
+<!--        android:hint="Company Name"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:background="@drawable/bg_edittext"/>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/textCompField"-->
+<!--        android:layout_width="225dp"-->
+<!--        android:layout_height="58dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="text"-->
+<!--        android:hint="Field"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textCompName"-->
+<!--        android:background="@drawable/bg_edittext"/>-->
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/scroll"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.426"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textCompField">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/textCompDesc"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/bg_edittext"-->
+<!--            android:gravity="start|top"-->
+<!--            android:hint="Enter your description or review"-->
+<!--            android:inputType="textMultiLine"-->
+<!--            android:maxLines="100"-->
+<!--            android:scrollbarStyle="insideInset"-->
+<!--            android:scrollbars="vertical" />-->
+
+<!--    </ScrollView>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/textPackage"-->
+<!--        android:layout_width="222dp"-->
+<!--        android:layout_height="61dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:background="@drawable/bg_edittext"-->
+<!--        android:ems="10"-->
+<!--        android:hint="2L-5L"-->
+<!--        android:inputType="textPersonName"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.476"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/scroll" />-->
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonSubmit"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:text="Submit"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/scrollView2"-->
+<!--        app:layout_constraintVertical_bias="0.222" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextCat"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:background="@drawable/bg_edittext"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Category (L1 or L2 etc)"-->
+<!--        android:inputType="text"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.462"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textPackage" />-->
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/scrollView"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginTop="52dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.44"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editTextCat">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextJobDesc"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/bg_edittext"-->
+<!--            android:gravity="start|top"-->
+<!--            android:hint="Enter job description"-->
+<!--            android:inputType="textMultiLine"-->
+<!--            android:maxLines="100"-->
+<!--            android:scrollbarStyle="insideInset"-->
+<!--            android:scrollbars="vertical" />-->
+
+<!--    </ScrollView>-->
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/scrollView2"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="92dp"-->
+<!--        android:layout_marginTop="44dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/scrollView">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextRecProcess"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/bg_edittext"-->
+<!--            android:gravity="start|top"-->
+<!--            android:hint="Description about recruitment process"-->
+<!--            android:inputType="textMultiLine"-->
+<!--            android:scrollbarStyle="insideInset"-->
+<!--            android:scrollbars="vertical" />-->
+
+<!--    </ScrollView>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/textCompDesc"-->
+    <!--        android:layout_width="225dp"-->
+    <!--        android:layout_height="54dp"-->
+    <!--        android:layout_marginTop="24dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="text"-->
+    <!--        android:hint="Short Description"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textCompField" />-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/editTextJobDesc"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="40dp"-->
+    <!--            android:ems="10"-->
+    <!--            android:inputType="text"-->
+    <!--            android:hint="Job Description"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toBottomOf="@+id/editTextCat" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/editTextRecProcess"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="text"-->
+    <!--        android:hint="Recrutment Process"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextJobDesc" />-->
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".AddCompanyActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".AddCompanyActivity">
+    android:layout_height="wrap_content"
+    android:padding="16dp">
 
     <EditText
         android:id="@+id/textCompName"
@@ -16,7 +205,8 @@
         android:hint="Company Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bg_edittext"/>
 
     <EditText
         android:id="@+id/textCompField"
@@ -28,77 +218,122 @@
         android:hint="Field"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCompName" />
+        app:layout_constraintTop_toBottomOf="@+id/textCompName"
+        android:background="@drawable/bg_edittext"/>
 
-    <EditText
-        android:id="@+id/textCompDesc"
-        android:layout_width="225dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="Short Description"
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCompField" />
+        app:layout_constraintTop_toBottomOf="@+id/textCompField">
+
+        <EditText
+            android:id="@+id/textCompDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:gravity="start|top"
+            android:hint="Enter your description or review"
+            android:inputType="textMultiLine"
+            android:maxLines="100"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical" />
+
+    </ScrollView>
 
     <EditText
         android:id="@+id/textPackage"
         android:layout_width="222dp"
         android:layout_height="61dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_edittext"
         android:ems="10"
         android:hint="2L-5L"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCompDesc" />
+        app:layout_constraintTop_toBottomOf="@+id/scroll" />
+
+
 
     <Button
         android:id="@+id/buttonSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="32dp"
         android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextRecProcess" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.222" />
 
     <EditText
         android:id="@+id/editTextCat"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="28dp"
+        android:background="@drawable/bg_edittext"
         android:ems="10"
-        android:inputType="text"
         android:hint="Category (L1 or L2 etc)"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPackage" />
 
-    <EditText
-        android:id="@+id/editTextJobDesc"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="Job Description"
+        android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextCat" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextCat">
 
-    <EditText
-        android:id="@+id/editTextRecProcess"
-        android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/editTextJobDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:gravity="start|top"
+            android:hint="Enter job description"
+            android:inputType="textMultiLine"
+            android:maxLines="100"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="Recrutment Process"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextJobDesc" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView">
+
+        <EditText
+            android:id="@+id/editTextRecProcess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:gravity="start|top"
+            android:hint="Description about recruitment process"
+            android:inputType="textMultiLine"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical" />
+
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
