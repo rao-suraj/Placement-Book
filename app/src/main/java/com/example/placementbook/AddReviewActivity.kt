@@ -22,7 +22,7 @@ class AddReviewActivity : AppCompatActivity() {
     lateinit var company: String
     lateinit var uid: String
     private val db = Firebase.firestore
-    val cityNames = ArrayList<String>()
+    private val cityNames = ArrayList<String>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAddReviewBinding.inflate(layoutInflater)
@@ -68,10 +68,10 @@ class AddReviewActivity : AppCompatActivity() {
             if (username != null) {
                 val review =
                     CompanyReview(company, username, questions, tips, impTopic, cmpyFeedback)
-                    db.collection("companies").document(company).collection("reviews").document()
+                db.collection("companies").document(company).collection("reviews").document()
                     .set(review).addOnSuccessListener {
-                    Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show()
-                }
+                        Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show()
+                    }
             }
         }
     }

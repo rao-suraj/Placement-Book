@@ -1,83 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    tools:context=".AddReviewActivity"-->
-<!--    >-->
-
-<!--    <Spinner-->
-<!--        android:id="@+id/companySpinner"-->
-<!--        android:layout_width="200dp"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_marginTop="80dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.498"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--    <EditText-->
-<!--        android:id="@+id/editTextQuestions"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="52dp"-->
-<!--        android:ems="10"-->
-<!--        android:hint="Questions Asked"-->
-<!--        android:inputType="text"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.502"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/companySpinner" />-->
-
-<!--    <EditText-->
-<!--        android:id="@+id/editTextTips"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="76dp"-->
-<!--        android:ems="10"-->
-<!--        android:inputType="text"-->
-<!--        android:hint="Tips"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/editTextQuestions" />-->
-
-<!--    <EditText-->
-<!--        android:id="@+id/editTextTopics"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="72dp"-->
-<!--        android:ems="10"-->
-<!--        android:inputType="text"-->
-<!--        android:hint="IMP Topics"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTips" />-->
-
-<!--    <EditText-->
-<!--        android:id="@+id/editTextFeedback"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="76dp"-->
-<!--        android:ems="10"-->
-<!--        android:inputType="text"-->
-<!--        android:hint="Company Feedback"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/editTextTopics" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/button"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="60dp"-->
-<!--        android:text="Button"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/editTextFeedback" />-->
-
-<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -131,7 +52,6 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:id="@+id/editTextQuestions"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Enter your description or review"
@@ -163,7 +83,6 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:id="@+id/editTextTips"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Enter your description or review"
@@ -197,7 +116,6 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:id="@+id/editTextFeedback"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Enter your description or review"
@@ -228,7 +146,6 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:id="@+id/editTextTopics"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Enter your description or review"
@@ -246,11 +163,9 @@
 
     <!-- Submit button -->
     <Button
-        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
-        android:onClick="onSubmitButtonClicked"
-        android:layout_marginStart="130dp"/>
+        android:layout_marginStart="150dp" />
 
 </LinearLayout>

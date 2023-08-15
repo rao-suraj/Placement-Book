@@ -12,10 +12,15 @@
         android:theme="@style/Theme.PlacementBook.MySplashScreen"
         tools:targetApi="31">
         <activity
+            android:name=".example"
+            android:exported="true"
+            android:theme="@style/Theme.PlacementBook">
+
+        </activity>
+        <activity
             android:name=".AddReviewActivity"
             android:exported="false"
-            android:theme="@style/Theme.PlacementBook"/>
-
+            android:theme="@style/Theme.PlacementBook" />
         <activity
             android:name=".ViewCompanyActivity"
             android:exported="false"
